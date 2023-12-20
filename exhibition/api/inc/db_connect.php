@@ -1,8 +1,8 @@
 <?php
     // set up
-    $db_host = '127.0.0.1';
+    $db_host = 'webtest-db-1';
     $db_user = 'root';
-    $db_pw = '';
+    $db_pw = 'root@0000';
     $db_name = 'exhibition';
     $db_char = 'utf8';
     // connect
