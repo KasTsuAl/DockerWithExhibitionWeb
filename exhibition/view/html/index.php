@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION['role']) && $_SESSION['role'] == 's') {
+        header('location: sAcc.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +15,6 @@
     <link rel="stylesheet" type="text/css" href="../css/utility.css">
     <title>首頁</title>
 </head>
-<?php
-    session_start();
-    if(isset($_SESSION['role']) && $_SESSION['role'] == 's') {
-        header('location: sAcc.php');
-    }
-?>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-2 px-sm-5">
         <div class="container-fluid">
